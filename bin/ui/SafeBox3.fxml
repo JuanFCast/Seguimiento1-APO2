@@ -8,44 +8,44 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="563.0" style="-fx-background-color: cornsilk;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="labSafe" alignment="CENTER" layoutX="187.0" layoutY="14.0" prefHeight="43.0" prefWidth="189.0" text="CAJA FUERTE" textAlignment="CENTER">
+      <Label fx:id="labSafe3" alignment="CENTER" layoutX="187.0" layoutY="14.0" prefHeight="43.0" prefWidth="189.0" text="CAJA FUERTE" textAlignment="CENTER">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="txtBox6" layoutX="51.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <Label fx:id="labInfo1" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="64.0" prefHeight="21.0" prefWidth="245.0" text="Digite la combinacion actual">
+      <Label fx:id="labInfo3" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="64.0" prefHeight="21.0" prefWidth="245.0" text="Digite la combinacion actual">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtBox61" layoutX="124.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox62" layoutX="200.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox63" layoutX="276.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox64" layoutX="352.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox65" layoutX="428.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <Button fx:id="btOpen11" layoutX="19.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CAMBIAR CLAVE" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Button>
-      <Button fx:id="btOpen111" layoutX="372.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CERRAR CAJA" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Button>
-      <TextField fx:id="txtBox66" layoutX="51.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox611" layoutX="124.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox621" layoutX="200.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox631" layoutX="276.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox632" layoutX="352.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox633" layoutX="428.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <Label fx:id="labInfo11" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="156.0" prefHeight="21.0" prefWidth="245.0" text="Digite la NUEVA combinacion">
+      <TextField fx:id="txtBox9" layoutX="51.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox8" layoutX="124.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox9" layoutX="200.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox10" layoutX="276.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox11" layoutX="352.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox12" layoutX="428.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <Label fx:id="labInfo4" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="156.0" prefHeight="21.0" prefWidth="245.0" text="Digite la NUEVA combinacion">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label fx:id="warning" alignment="CENTER" contentDisplay="CENTER" layoutX="212.0" layoutY="261.0" prefHeight="53.0" prefWidth="139.0" textFill="RED" wrapText="true">
+      <TextField fx:id="txtBox13" layoutX="51.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox14" layoutX="124.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox15" layoutX="200.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox16" layoutX="276.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox17" layoutX="352.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox18" layoutX="428.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
+      <Button fx:id="btOpen4" layoutX="19.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CAMBIAR CLAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btOpen5" layoutX="372.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CERRAR CAJA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="warning3" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="261.0" prefHeight="53.0" prefWidth="139.0" textFill="RED" wrapText="true">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

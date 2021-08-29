@@ -18,7 +18,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="txtBox9" layoutX="51.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox7" layoutX="51.0" layoutY="91.0" onAction="#changePassword" prefHeight="53.0" prefWidth="76.0" />
       <TextField fx:id="txtBox8" layoutX="124.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
       <TextField fx:id="txtBox9" layoutX="200.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
       <TextField fx:id="txtBox10" layoutX="276.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
@@ -35,12 +35,12 @@
       <TextField fx:id="txtBox16" layoutX="276.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
       <TextField fx:id="txtBox17" layoutX="352.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
       <TextField fx:id="txtBox18" layoutX="428.0" layoutY="188.0" prefHeight="53.0" prefWidth="76.0" />
-      <Button fx:id="btOpen4" layoutX="19.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CAMBIAR CLAVE" textFill="WHITE">
+      <Button fx:id="btOpen4" layoutX="19.0" layoutY="261.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CAMBIAR CLAVE" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="btOpen5" layoutX="372.0" layoutY="261.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CERRAR CAJA" textFill="WHITE">
+      <Button fx:id="btOpen5" layoutX="372.0" layoutY="261.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="CERRAR CAJA" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

@@ -3,7 +3,7 @@ package model;
 public class SafeBox {
 
 	public static double password = 000000; 
-	public static String safe = "";
+	public static String save = "";
 	
 	public static boolean unlocker(double p) {
 		boolean sentinel = false;
@@ -11,19 +11,21 @@ public class SafeBox {
 		if(p == password) {
 			sentinel = true;
 		}
-		
 		return sentinel;
-		
 	}
 	
 	
-	
-	public String getSafe() {
-		return safe;
+	public String getSave() {
+		return save;
 	}
 
-	public void setSafe(String safe) {
-		SafeBox.safe = safe;
+	public void setSave(String save) {
+		SafeBox.save = save;
+	}
+	
+
+	public static void setPassword(double password) {
+		SafeBox.password = password;
 	}
 	
 	

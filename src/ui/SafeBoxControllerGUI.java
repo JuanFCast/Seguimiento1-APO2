@@ -78,10 +78,13 @@ public class SafeBoxControllerGUI {
     private Label labInfo3;
 
     @FXML
-    private TextField txtBox9;
+    private TextField txtBox7;
 
     @FXML
     private TextField txtBox8;
+    
+    @FXML
+    private TextField txtBox9;
 
     @FXML
     private TextField txtBox10;
@@ -159,7 +162,7 @@ public class SafeBoxControllerGUI {
                 mainStage.setTitle("Window 2");
                 mainStage.show();
                 
-                textArea.setText(box.getSafe());
+                textArea.setText(box.getSave());
         		
         		
         	}else {
@@ -181,11 +184,76 @@ public class SafeBoxControllerGUI {
         Scene scene = new Scene(root);
 
         mainStage.setScene(scene);
+        mainStage.setTitle("Window 2");
+        mainStage.show();
+        
+        String info = textArea.getText();
+        box.setSave(info);
+    	
+    }
+    
+    
+    
+    
+    
+    
+    public void switchPassword(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SafeBox3.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        mainStage.setScene(scene);
+        mainStage.setTitle("Window 3");
+        mainStage.show();
+        
+     
+    	
+    }
+    
+    public void changePassword(ActionEvent event) throws IOException {
+    	String password1 = txtBox7.getText() + txtBox8.getText() + txtBox9.getText() + txtBox10.getText() + txtBox11.getText() + txtBox12.getText();
+    	String password2 = txtBox13.getText() + txtBox14.getText() + txtBox15.getText() + txtBox16.getText() + txtBox17.getText() + txtBox18.getText();
+    	
+    	try {
+    		double passwordS = Double.parseDouble(password1);
+    		double passwordN = Double.parseDouble(password2);
+    		
+    		if(passwordS!=passwordN) {
+    			if(SafeBox.unlocker(passwordS)==true) {
+            		SafeBox.setPassword(passwordN);
+            		JOptionPane.showMessageDialog(null, "Se ha cambiado correctamente la contraseña");
+      
+            	
+            	}else {
+            		JOptionPane.showMessageDialog(null, "La contraseña es INCORRECTA, intentalo de nuevo");
+            	}
+    		}else {
+    			JOptionPane.showMessageDialog(null, "Ingresa una contraseña diferente a la anterior");
+    		}
+    		
+    	}catch(NumberFormatException ex) {
+    		JOptionPane.showMessageDialog(null, "Ingrese por favor valores numericos");
+    	}
+        
+     
+    	
+    }
+    
+    
+    
+    public void backMenu(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SafeBox1.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        mainStage.setScene(scene);
         mainStage.setTitle("Safe Box");
         mainStage.show();
         
-        String imfo = textArea.getText();
-        box.setSafe(imfo);
+        String info = textArea.getText();
+        box.setSave(info);
     	
     }
     

@@ -122,9 +122,11 @@ public class SafeBoxControllerGUI {
     @FXML
     private Label warning3;
     
+    private SafeBox box;
     
-    
-    
+    public SafeBoxControllerGUI() {
+    	box = new SafeBox();
+    }
 
     //General
     private Stage mainStage;
@@ -143,29 +145,48 @@ public class SafeBoxControllerGUI {
     @FXML
     public void switchWindow(ActionEvent event) throws IOException {
     	String password = txtBox1.getText() + txtBox2.getText() + txtBox3.getText() + txtBox4.getText() + txtBox5.getText() + txtBox6.getText();
-    	
-    	double passwordS = Double.parseDouble(password);
-    	
-    	if(SafeBox.unlocker(passwordS)==true) {
-    		
-    		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SafeBox2.fxml"));
-            fxmlLoader.setController(this);
-            Parent root = fxmlLoader.load();
-            Scene scene = new Scene(root);
+    	try {
+    		double passwordS = Double.parseDouble(password);
+        	
+        	if(SafeBox.unlocker(passwordS)==true) {
+        		
+        		FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SafeBox2.fxml"));
+                fxmlLoader.setController(this);
+                Parent root = fxmlLoader.load();
+                Scene scene = new Scene(root);
 
-            mainStage.setScene(scene);
-            mainStage.setTitle("Window 2");
-            mainStage.show();
+                mainStage.setScene(scene);
+                mainStage.setTitle("Window 2");
+                mainStage.show();
+                
+                textArea.setText(box.getSafe());
+        		
+        		
+        	}else {
+        		JOptionPane.showMessageDialog(null, "La contraseña es INCORRECTA, intentalo de nuevo");
+        	}
     		
-    		
-    	}else {
-    		JOptionPane.showMessageDialog(null, "La contraseña es INCORRECTA, intentalo de nuevo");
+    	}catch(NumberFormatException ex) {
+    		JOptionPane.showMessageDialog(null, "Ingrese por favor valores numericos");
     	}
-    		
-    	
-    	
-    	
+ 	      
+    }
+    
+    
+    
+    public void backWindow(ActionEvent event) throws IOException {
+    	FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SafeBox1.fxml"));
+        fxmlLoader.setController(this);
+        Parent root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+
+        mainStage.setScene(scene);
+        mainStage.setTitle("Safe Box");
+        mainStage.show();
         
+        String imfo = textArea.getText();
+        box.setSafe(imfo);
+    	
     }
     
     

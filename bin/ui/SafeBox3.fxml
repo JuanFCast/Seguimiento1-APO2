@@ -45,10 +45,5 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Label fx:id="warning3" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="261.0" prefHeight="53.0" prefWidth="139.0" textFill="RED" wrapText="true">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
    </children>
 </Pane>

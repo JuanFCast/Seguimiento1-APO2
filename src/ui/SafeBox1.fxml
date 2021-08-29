@@ -18,21 +18,16 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtBox1" layoutX="22.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox2" layoutX="98.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox3" layoutX="174.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox4" layoutX="250.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox5" layoutX="326.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
-      <TextField fx:id="txtBox6" layoutX="402.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox1" alignment="CENTER" layoutX="22.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox2" alignment="CENTER" layoutX="98.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox3" alignment="CENTER" layoutX="174.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox4" alignment="CENTER" layoutX="250.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox5" alignment="CENTER" layoutX="326.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
+      <TextField fx:id="txtBox6" alignment="CENTER" layoutX="402.0" layoutY="91.0" prefHeight="53.0" prefWidth="76.0" />
       <Button fx:id="btOpen1" layoutX="168.0" layoutY="158.0" mnemonicParsing="false" onAction="#switchWindow" prefHeight="53.0" prefWidth="166.0" style="-fx-background-color: darkcyan;" text="ABRIR" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Button>
-      <Label fx:id="labelWarning" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="227.0" prefHeight="53.0" prefWidth="139.0" textFill="RED" wrapText="true">
-         <font>
-            <Font name="System Bold" size="12.0" />
-         </font>
-      </Label>
    </children>
 </Pane>
